@@ -40,14 +40,14 @@ if __name__ == "__main__":
     语言：Python 2.7.5
 ---------------------------------------
     """
-	update()
-	os.popen("@TASKKILL /F /IM Shadowsocks.exe")
-	os.popen('F:\\Downloads\\software\\Shadowsocks-2.5.8\\Shadowsocks.exe')
+    update()
+    os.popen("@TASKKILL /F /IM Shadowsocks.exe")
+    os.popen('F:\\Downloads\\software\\Shadowsocks-2.5.8\\Shadowsocks.exe')
 
-	while True:
-		if datetime.datetime.now().hour % 6 == 0: # 6:00 12:00 18:00 0:00
-			if datetime.datetime.now().minute < 5:
-				update()
-				os.popen("@TASKKILL /F /IM Shadowsocks.exe") # kill process
-				os.popen('F:\\Downloads\\software\\Shadowsocks-2.5.8\\Shadowsocks.exe')
-		time.sleep(180) # 3 minutes
+    while True:
+        if datetime.datetime.now().hour % 6 == 0: # 6:00 12:00 18:00 0:00
+            if datetime.datetime.now().minute < 5:
+                update()
+                os.popen("@TASKKILL /F /IM Shadowsocks.exe") # kill process
+                os.popen('F:\\Downloads\\software\\Shadowsocks-2.5.8\\Shadowsocks.exe')
+                time.sleep(180) # 3 minutes
