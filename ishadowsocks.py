@@ -11,7 +11,7 @@ def update():
     myUrl = "http://www.ishadowsocks.com/"
     user_agent = 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)'
     headers = { 'User-Agent' : user_agent }
-    
+    req = urllib2.Request(myUrl, headers = headers)
     #encode的作用是将unicode编码转换成其他编码的字符串
     #decode的作用是将其他编码的字符串转换成unicode编码
     unicodePage = urllib2.urlopen(req).read().decode("utf-8")
